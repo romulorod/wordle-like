@@ -14,8 +14,8 @@ function Game() {
   const [guesses, setGuesses] = React.useState([]);
 
   const endOfGame = React.useMemo(() => {
-    if(guesses.length >= 6) return 'lose';
     if(guesses.includes(answer)) return 'win';
+    if(guesses.length >= 6) return 'lose';
   }, [guesses]);
 
   return <>
