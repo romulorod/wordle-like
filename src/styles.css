@@ -32,12 +32,12 @@ body {
 
 button {
   margin: 0;
-  padding: 0;
-  border: none;
-  background: transparent;
+  padding: 20;
+  border: 2px solid black;
+  background: blue;
   cursor: pointer;
   text-align: left;
-  color: inherit;
+  color: white;
 }
 
 .wrapper {
