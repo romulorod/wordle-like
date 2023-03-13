@@ -4,7 +4,6 @@ function GuessInput({ guesses, setGuesses, endOfGame }) {
   const [inputValue, setInputValue] = React.useState("");
   function submit(event) {
     event.preventDefault();
-    console.log({ inputValue });
     const nextGuess = [...guesses, inputValue];
     setGuesses(nextGuess);
     setInputValue('');
